@@ -24,14 +24,14 @@ def predict_new(logo_image_path: str, prompt: str):
         base_model="digiplay/Juggernaut_final",
         prompt= prompt,
         negative_prompt="ongbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
-        num_inference_steps=40,
-        guidance_scale=3,
+        num_inference_steps=20,
+        guidance_scale=7,
         num_images_per_prompt=1,
         encoded_control_net_image=image,
         control_type="canny_edge",
-        controlnet_conditioning_scale=1.0,
-        height=512,
-        width=512,
+        controlnet_conditioning_scale=0.95,
+        height=768,
+        width=768,
     )
 
     request = base_request.dict()

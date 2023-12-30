@@ -83,7 +83,7 @@ def show_server_up_ui():
     timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
     st.sidebar.title("Upload your logo Image")
 
-    prompt = st.text_input("Enter your prompt here")
+    prompt = st.text_input("Enter your prompt here","tropical, plants, neons, high res, natural lightning, outdoors, greenery, photorealistic")
     page = st.sidebar.selectbox("Select a page", ["Upload Image", "Process Image"])
 
     if page == "Upload Image":
