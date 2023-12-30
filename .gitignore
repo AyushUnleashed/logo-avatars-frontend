@@ -3,8 +3,14 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+venv/
+.idea/
 # C extensions
 *.so
+
+assets/generations/*
+assets/user_logos/*
+server_output.png
 
 # Distribution / packaging
 .Python
